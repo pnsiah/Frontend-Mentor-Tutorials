@@ -1,0 +1,51 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(212, 45%, 89%);
+}
+
+.qr-container {
+  width: 16em;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+.qr-img {
+  border-radius: 0.5em;
+  height: 200px;
+  width: 500px;
+  width: 100%;
+}
+
+h2,
+p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  color: hsl(218, 44%, 22%);
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+  color: hsl(220, 15%, 55%);
+}
