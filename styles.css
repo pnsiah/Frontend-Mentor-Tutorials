@@ -1,0 +1,88 @@
+:root {
+  font-size: 12px;
+  box-sizing: border-box;
+  --green-clr: hsl(75, 94%, 57%);
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 12%);
+  padding: 1.5em;
+  border-radius: 0.5em;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+h2,
+h3,
+p,
+a {
+  text-align: center;
+}
+
+h3 {
+  color: var(--green-clr);
+  font-size: 0.9rem;
+  margin-top: 0.5em;
+  font-weight: 600;
+}
+
+p {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.social {
+  margin: 0.5em 0;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  padding: 0.6em 1em;
+  border-radius: 0.5em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: var(--green-clr);
+
+  color: hsl(0, 0%, 8%);
+}
