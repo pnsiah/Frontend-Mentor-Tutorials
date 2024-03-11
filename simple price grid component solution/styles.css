@@ -1,0 +1,107 @@
+:root {
+  box-sizing: border-box;
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  /* max-width: 1440px; */
+  background-color: var(--light-gray);
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "community    community"
+    "subscription incentives";
+  grid-auto-rows: repeat(2, auto);
+  max-width: 60%;
+  margin: 4em auto;
+}
+
+@media (max-width: 500px) {
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "community"
+      "subscription"
+      "incentives";
+    grid-auto-rows: repeat(3, auto);
+    max-width: 90%;
+    margin: 4em auto;
+  }
+}
+.community {
+  background-color: #fff;
+  padding: 1em 2em;
+  grid-area: community;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.subscription {
+  background-color: var(--cyan);
+  padding: 1em 2em;
+  color: var(--light-gray);
+  grid-area: subscription;
+  border-bottom-left-radius: 0.5em;
+}
+
+.incentives {
+  background-color: var(--grayish-blue);
+  padding: 1em 2em;
+  color: var(--light-gray);
+  grid-area: incentives;
+  border-bottom-right-radius: 0.5em;
+}
+
+@media (max-width: 500px) {
+  .subscription {
+    border-radius: 0px;
+  }
+
+  .incentives {
+    border-bottom-left-radius: 0.5em;
+  }
+}
+.community h1 {
+  font-size: 1.5rem;
+  color: var(--cyan);
+}
+
+.community h2 {
+  font-size: 1rem;
+  color: var(--bright-yellow);
+}
+
+.community p {
+  color: var(--grayish-blue);
+}
+
+.sub-heading {
+  font-size: 1rems;
+}
+.btn__signup {
+  background-color: var(--bright-yellow);
+  padding: 1em;
+  color: var(--light-gray);
+  border: 0px;
+  font-size: 1rem;
+  border-radius: 0.5em;
+  width: 100%;
+}
+
+ol {
+  list-style: none;
+  padding: 0em;
+}
