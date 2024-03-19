@@ -5,47 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
+      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="styles.css" />
-
-    <title>CSS Grid</title>
+    <title>Simple Recipe Page</title>
   </head>
   <body>
-    <div class="container-social-link">
-      <!-- profile info -->
-      <div class="profile">
-        <img
-          src="./images/avatar-jessica.jpeg"
-          alt="profile pic"
-          class="profile-img"
-        />
-        <h2>Jessica Randall</h2>
-        <h3>London, United kingdom</h3>
-        <p>"Front-end developer and avid reader"</p>
-      </div>
-      <!-- end of profile info? -->
+    <div class="recipe-container">
+      <div class="hero-img"></div>
 
-      <!-- social media links -->
-      <div class="social-links">
-        <a href="#" class="social">GitHub</a>
-        <a href="#" class="social">Frontend Mentor</a>
-        <a href="#" class="social">LinkedIn</a>
-        <a href="#" class="social">Twitter</a>
-        <a href="#" class="social">Instagram</a>
+      <!-- recipe info -->
+      <div class="recipe-info">
+        <h1 class="heading">Simple Omellete Recipe</h1>
+        <p>
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
       </div>
-      <!-- end of social media links -->
+      <!-- end of recipe info -->
+
+      <!-- preparation -->
+      <div class="preparation">
+        <h3 class="sub-heading">Preparation Time</h3>
+        <ul class="list">
+          <li><span>Total</span>: Approximately 10 minutes</li>
+          <li><span>Cooking</span>: 5 minutes</li>
+          <li><span>Cooking</span>: 5 minutes</li>
+        </ul>
+      </div>
+      <!-- end of preparation -->
+
+      <!-- ingredients -->
+      <div class="ingredients">
+        <h2 class="sub-heading">Ingredients</h2>
+        <ul class="list">
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>
+            Optional fillings: cheese, diced vegetables, cooked meats, herbs
+          </li>
+        </ul>
+      </div>
+      <!-- end of ingredients -->
+
+      <!-- instructions -->
+      <div class="instructions">
+        <h2 class="sub-heading">Instructions</h2>
+
+        <ol>
+          <li>
+            <span>Beat the eggs</span>: In a bowl, beat the eggs with a pinch of
+            salt and pepper until the they are well mixed. You can add a
+            tablespoon of water or milk for a fluffier texture.
+          </li>
+
+          <li>
+            <span>Heat the pan</span>: Place a non-stick frying pan over medium
+            heat and ad butter or oil.
+          </li>
+
+          <li>
+            <span>Cook the omelette</span>: Once the butter is melted and
+            bubbling, pour in the eggs.Tilt the pan to ensure the eggs evenly
+            coat the surface.
+          </li>
+
+          <li>
+            <span>Add the fillings(optional)</span>: When the eggs begin to set
+            the at the edges but are still slightly runny in the middle,
+            sprinkle your chosen fillings over one half of the omelette.
+          </li>
+
+          <li>
+            <span>Fold and serve</span>: As the omelette continues to cook,
+            carefully lift one edge and fold it over the fillings. Let it cook
+            for another minute, then slide it onto a plate.
+          </li>
+
+          <li>
+            <span>Enjoy</span>: Serve hot, with additional salt and pepper if
+            needed.
+          </li>
+        </ol>
+      </div>
+      <!-- end of the instruction -->
+
+      <!-- nutrition -->
+      <div class="nutrition">
+        <h2 class="sub-heading">Nutrition</h2>
+        <p>
+          The table below shows nutritional values per serving without the
+          additional fillings
+        </p>
+
+        <table class="nutritional-table">
+          <tr>
+            <td>Calories</td>
+            <td>277kcal</td>
+          </tr>
+          <tr>
+            <td>Carbs</td>
+            <td>0g</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>20g</td>
+          </tr>
+          <tr>
+            <td>Fat</td>
+            <td>22g</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </body>
 </html>

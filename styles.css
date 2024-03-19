@@ -1,7 +1,5 @@
 :root {
-  font-size: 12px;
   box-sizing: border-box;
-  --green-clr: hsl(75, 94%, 57%);
 }
 
 *,
@@ -11,78 +9,96 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  height: 100vh;
-  background-color: hsl(0, 0%, 8%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+  font-weight: normal;
 }
 
-.container-social-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: hsl(0, 0%, 12%);
-  padding: 1.5em;
+.recipe-container {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 40%;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero-img {
+  width: 100%;
+  padding: 1em;
+  height: 15em;
+
+  background-image: url(./images/image-omelette.jpeg);
+  background-size: cover;
+  border-radius: 0.5em;
+  background-position: 50%;
+}
+
+.sub-heading {
+  color: hsl(14, 45%, 36%);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+.preparation .sub-heading {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(332, 51%, 32%);
+}
+
+ul,
+ol {
+  padding: 1em;
+  margin: 0;
+}
+
+li + li {
+  padding-top: 0.2em;
+}
+
+span {
+  font-weight: bold;
+}
+
+.preparation {
+  background-color: hsl(330, 100%, 98%);
+  padding: 0.5em;
   border-radius: 0.5em;
 }
 
-.profile-img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
-h2 {
-  color: hsl(0, 0%, 100%);
-  margin-bottom: 0;
-  font-weight: 700;
-}
-
-h2,
-h3,
-p,
-a {
-  text-align: center;
-}
-
-h3 {
-  color: var(--green-clr);
-  font-size: 0.9rem;
-  margin-top: 0.5em;
-  font-weight: 600;
-}
-
-p {
-  color: hsl(0, 0%, 100%);
-  font-weight: 400;
-}
-
-.social-links {
-  display: flex;
-  flex-direction: column;
+.ingredients,
+.instructions {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
   width: 100%;
 }
 
-.social {
-  margin: 0.5em 0;
-  text-decoration: none;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 0%, 20%);
-  padding: 0.6em 1em;
-  border-radius: 0.5em;
-  font-weight: 700;
-  cursor: pointer;
+.nutritional-table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-a:hover {
-  background-color: var(--green-clr);
+td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.5em;
+}
 
-  color: hsl(0, 0%, 8%);
+.nutritional-table tr td:nth-of-type(2) {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
 }
